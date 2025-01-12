@@ -96,3 +96,14 @@ While Ollama is primarily a local server, with proper configuration, it can be d
 - LangChain and Sentence-Transformers for providing cutting-edge NLP models.
 - Ollama for offering a private and efficient local LLM solution.
 - Developers of open-source libraries used in this project.
+
+### Sample Questions to bot
+- "What is discussed in page 1?" 
+- "Show me images from page 2" 
+- "Who is the author?" 
+- "What topics are covered in this document?"
+- “Show me images from page 1”
+
+<img width="1436" alt="Screenshot 2025-01-12 at 1 16 06 AM" src="https://github.com/user-attachments/assets/61b16181-92f0-4470-bf0f-477f463479f3" />
+
+
