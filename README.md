@@ -2,12 +2,12 @@
 The ED-Chatbot is an intelligent question-and-answer system built to process and analyze PDF documents. Users can upload PDFs and interact with the system by asking questions about the document's content. The chatbot combines modern Natural Language Processing (NLP) techniques with an intuitive interface built using Streamlit, leveraging a Retrieval-Augmented Generation (RAG) model for accurate and context-aware responses.
 
 ## Features
-**PDF Upload:** Users can upload PDF documents containing text or images for analysis.
-**Question-Answer Interaction:** Provides accurate and context-specific answers based on PDF content.
-**Semantic Search:** Utilizes vector embeddings to find and focus on the most relevant parts of the document.
-**Dynamic User Interface:** Built with Streamlit, offering an intuitive and seamless experience.
-**Image Support:** Handles PDFs containing embedded images and text.
-**Reliability:** Uses retrieval-augmented generation to ground responses in the document content, reducing misinformation.
+PDF Upload:Users can upload PDF documents containing text or images for analysis.
+Question-Answer Interaction: Provides accurate and context-specific answers based on PDF content.
+Semantic Search: Utilizes vector embeddings to find and focus on the most relevant parts of the document.
+Dynamic User Interface: Built with Streamlit, offering an intuitive and seamless experience.
+Image Support: Handles PDFs containing embedded images and text.
+Reliability: Uses retrieval-augmented generation to ground responses in the document content, reducing misinformation.
 
 ## Why This Model/Approach Was Chosen
 ### Why RAG Model Was Used
@@ -44,6 +44,24 @@ Avoids recurring costs associated with cloud-based LLM APIs, such as OpenAI's GP
 Ollama supports custom and fine-tuned models that can be optimized for specific use cases, making it highly adaptable to diverse requirements.
 
 While Ollama is primarily a local server, with proper configuration, it can be deployed to a cloud environment for remote access, making it suitable for future scalability.
+
+## Scalability
+While the chatbot is currently designed to answer questions based on individual PDF documents, its architecture is scalable to handle larger and more complex requirements:
+
+1. Multiple Document Support:
+- Future iterations can include the ability to process and query multiple documents simultaneously, enabling cross-document insights.
+
+2. Enhanced Query Capabilities:
+- Extend question-answering functionality to support broader queries that involve summarization, extraction, or comparisons across documents.
+
+3. Cloud Deployment:
+- Although Ollama is currently deployed locally, it can be containerized and deployed on cloud platforms (e.g., AWS, Azure, GCP) to support remote and distributed users.
+
+4. Concurrent Users:
+- Scalability enhancements can include asynchronous processing and load balancing to support concurrent queries from multiple users.
+
+5. Domain-Specific Extensions:
+- Fine-tuning the model for specific domains (e.g., legal, medical) will allow the chatbot to adapt to diverse use cases without re-architecting the system.
 
 ## Installation
 1. Clone the repository:
